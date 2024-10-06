@@ -59,7 +59,10 @@ export const GroupForm = ({ onSubmit }: GroupFormProps) => {
               ]}
             >
               {/*  todo: word highlighting in input */}
-              <Input.TextArea autoSize={{ minRows: 4 }} />
+              <Input.TextArea
+                autoSize={{ minRows: 4 }}
+                placeholder={'Honza Zuzka Hanka Petr'}
+              />
             </Form.Item>
             <Form.Item style={{ alignSelf: 'center' }}>
               <Button type="primary" htmlType="submit">

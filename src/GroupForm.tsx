@@ -22,6 +22,7 @@ export const GroupForm = ({ onSubmit }: GroupFormProps) => {
         .replace(',', '')
         .split(' ')
         .filter((s) => s.trim().length > 0)
+        .map((name) => name.charAt(0).toUpperCase() + name.substring(1))
 
       onSubmit({ ...data, people })
     },
